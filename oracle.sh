@@ -1,0 +1,21 @@
+##################################################
+# 这是个oracle连接shell脚本
+# 
+#
+#
+#
+#################################################
+
+sqlplus -s lifepro/oracle@10.31.17.86/upbs<<EOF
+
+	set timing off; 
+	set trimout on;
+	set trimspool on;
+	set heading on; 
+	set linesize 500; 
+	set pagesize 0;
+	set termout on;
+
+	select *from dual;
+
+EOF
